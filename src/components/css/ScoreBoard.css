@@ -1,0 +1,155 @@
+/* ScoreBoard.css */
+.scoreboard-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.scoreboard-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 48rem;
+  padding: 1.5rem;
+}
+
+.scoreboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.scoreboard-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #2563eb;
+}
+
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-item p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #334155;
+  margin: 0;
+}
+
+.scoreboard-table-container {
+  overflow-x: auto;
+}
+
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.scoreboard-table th,
+.scoreboard-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.scoreboard-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.scoreboard-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.performance-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.performance-badge.excellent {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.performance-badge.good {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.performance-badge.average {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.performance-badge.needs-improvement {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .scoreboard-card {
+      padding: 1rem;
+  }
+
+  .stats-summary {
+      grid-template-columns: 1fr;
+  }
+
+  .scoreboard-table-container {
+      overflow-x: scroll;
+  }
+
+  .scoreboard-table th,
+  .scoreboard-table td {
+      padding: 0.5rem;
+  }
+}
