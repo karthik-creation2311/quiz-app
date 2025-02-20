@@ -7,7 +7,6 @@ A fun and interactive **Quiz Application** built with **React.js** and **Indexed
 - ✅ **Scoreboard:** Tracks previous attempts with **date & time**.
 - ✅ **Performance Analysis:** Shows performance as **Excellent, Good, Average, or Needs Improvement**.
 - ✅ **IndexedDB Storage:** Saves quiz history locally.
-- ✅ **Leaderboard (Planned Feature):** Compete with others on a global scale!
 
 ## 🖼 Screenshots
 
