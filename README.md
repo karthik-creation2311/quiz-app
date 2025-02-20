@@ -29,7 +29,8 @@ A fun and interactive **Quiz Application** built with **React.js** and **Indexed
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/karthik-creation/quiz-app.git
+git clone https://github.com/karthik-creation2311/quiz-app.git
+
 cd quiz-app
 ```
 ### 2️⃣ Install Dependencies
